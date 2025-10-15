@@ -106,6 +106,33 @@ public class ModBlocksRegistry {
             new CustomSlab(createBlockSettings(Blocks.BLACKSTONE_SLAB)));
     public static final Block ENDSTONE_SLAB = registerBlock("endstone_slab",
             new CustomSlab(createBlockSettings(Blocks.END_STONE)));
+//terralith
+    public static final Block CALCITE_SLAB = registerBlock("calcite_slab",
+        new CustomSlab(createBlockSettings(Blocks.CALCITE)));
+    public static final Block SMOOTH_BASALT_SLAB = registerBlock("smooth_basalt_slab",
+            new CustomSlab(createBlockSettings(Blocks.SMOOTH_BASALT)));
+    public static final Block LIGHT_BLUE_TERRACOTTA_SLAB = registerBlock("light_blue_terracotta_slab",
+            new CustomSlab(createBlockSettings(Blocks.LIGHT_BLUE_TERRACOTTA)));
+    public static final Block CYAN_TERRACOTTA_SLAB = registerBlock("cyan_terracotta_slab",
+            new CustomSlab(createBlockSettings(Blocks.CYAN_TERRACOTTA)));
+    public static final Block CUSTOM_COBBLESTONE_SLAB = registerBlock("terrain_cobblestone_slab",
+            new CustomSlab(createBlockSettings(Blocks.COBBLESTONE_SLAB)));
+    public static final Block CUSTOM_MOSSY_COBBLESTONE_SLAB = registerBlock("terrain_mossy_cobblestone_slab",
+            new CustomSlab(createBlockSettings(Blocks.MOSSY_COBBLESTONE_SLAB)));
+    public static final Block CUSTOM_COBBLED_DEEPSLATE_SLAB = registerBlock("terrain_cobbled_deepslate_slab",
+            new CustomSlab(createBlockSettings(Blocks.COBBLED_DEEPSLATE_SLAB)));
+    public static final Block ICE_SLAB = registerBlock("ice_slab",
+            new CustomSlab(createBlockSettings(Blocks.ICE).slipperiness(0.98f)));
+    public static final Block ROOTED_DIRT_SLAB = registerBlock("rooted_dirt_slab",
+            new CustomSlab(createBlockSettings(Blocks.ROOTED_DIRT)));
+    public static final Block PACKED_MUD_SLAB = registerBlock("packed_mud_slab",
+            new CustomSlab(createBlockSettings(Blocks.PACKED_MUD)));
+    public static final Block BLUE_ICE_SLAB = registerBlock("blue_ice_slab",
+            new CustomSlab(createBlockSettings(Blocks.BLUE_ICE)));
+    public static final Block BLACK_TERRACOTTA_SLAB = registerBlock("black_terracotta_slab",
+            new CustomSlab(createBlockSettings(Blocks.BLACK_TERRACOTTA)));
+    public static final Block CUSTOM_PRISMARINE_SLAB = registerBlock("terrain_prismarine_slab",
+            new CustomSlab(createBlockSettings(Blocks.PRISMARINE_SLAB)));
 
     public static final Block SNOW_ON_TOP = registerBlock("snow_on_top",
             new SnowOnTop(createBlockSettings(Blocks.SNOW)));
@@ -129,6 +156,7 @@ public class ModBlocksRegistry {
             new GrassOnTop(createBlockSettings(Blocks.SHORT_GRASS)));
     public static final Block FERN_ON_TOP = registerBlock("fern_on_top",
             new GrassOnTop(createBlockSettings(Blocks.FERN)));
+
 
     private static Block.Settings createBlockSettings(Block baseBlock) {
         Identifier id = Identifier.of(TerrainSlabs.MOD_ID, Registries.BLOCK.getId(baseBlock).getPath());

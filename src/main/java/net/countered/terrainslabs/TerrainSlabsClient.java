@@ -17,6 +17,10 @@ import net.minecraft.world.biome.GrassColors;
 public class TerrainSlabsClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocksRegistry.ICE_SLAB, RenderLayer.getTranslucent());
+
+
+
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocksRegistry.GRASS_SLAB, RenderLayer.getCutoutMipped());
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocksRegistry.POPPY_ON_TOP, RenderLayer.getCutoutMipped());
